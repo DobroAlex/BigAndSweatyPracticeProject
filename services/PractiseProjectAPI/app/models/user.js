@@ -50,3 +50,6 @@ Schema.methods.comparePassword = function(password, callback) {
         callback(null, mathces);
     });
 };
+
+/*создадим модель User:*/
+mongoose.model('User', Schema);
