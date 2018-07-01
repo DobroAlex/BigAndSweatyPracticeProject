@@ -38,3 +38,30 @@ api.index = (User, BAPPToken) => (req,res) =>{
         return res.status(403).send({success:false, message: 'Unauthorized accsess'});
     }
 }
+/* создадим метод signup,  понадобится позже. 
+Он предназначен для регистрации новых пользователей:*/
+api.signup = (User) => (req, res) => {
+    if (!req.body.username || !req.body.password)
+    {
+        res.json({ success: false, message: 'Please, pass a username and password.' });
+    }
+    else {
+      const newUser = new User({
+        username:   req.body.username,
+        password:   req.body.password,
+        UserInfo:   []
+      });
+      newUser.save((error) => {
+        if (error) 
+        {
+            return res.status(400).json({ success: false, message:  'Username is not unique.' });
+        }
+        res.json({ success: true, message: 'Account created successfully' });
+      })
+    }
+} /*Тут проверяется, при попытке регистрации нового пользователя,
+ заполнены ли поля username и password, 
+ и если это так, то, при условии, 
+ что введено допустимое имя пользователя, 
+создаётся новый пользователь.*/
+  module.exports = api;
