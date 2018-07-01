@@ -29,4 +29,25 @@ api.login = (User) => (req, res) => {
     });
   }
   /*Теперь нужен ещё один метод api, который будет получать и парсить токен:*/
-  
+
+api.verify = (headers) =>
+{
+    if (headers && headers.authorization)
+    {
+        const split = headers.authorization.split(' ');
+        if (split.length === 2)
+        {
+            return split[1];
+        }
+        else
+        {
+            return null;
+        }
+    }
+    else
+    {
+        return null;
+    }
+} /*Этот метод проверяет заголовки и получает заголовок Authorization*/
+/*можем экспортировать объект api:*/
+module.exports = api;
