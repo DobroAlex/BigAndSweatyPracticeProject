@@ -17,3 +17,24 @@ api.setup = (User) => (req,res) =>  /*Метод setup позволяет соз
         res.json({success:true});
     })
 }
+/*метод, применяемый для тестовых целей, 
+позволяющий вывести список всех пользователей, 
+которые зарегистрировались в приложении, 
+и нужный для проверки механизмов аутентификации:*/
+api.index = (User, BAPPToken) => (req,res) =>{
+    const token = BAPPToken;
+    if (token)
+    {
+        User.find({}, (error,users) => {
+            if (error)
+            {
+                throw error;
+            }
+            res.status(200).json(users);
+        });
+    }
+    else 
+    {
+        return res.status(403).send({success:false, message: 'Unauthorized accsess'});
+    }
+}
