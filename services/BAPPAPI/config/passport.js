@@ -2,7 +2,7 @@ const PassportJWT = require('passport-jwt'),
     ExtractJWT = PassportJWT.ExtractJwt,
     Strategy = PassportJWT.Strategy,
     config = require('./index.JS'),
-    models = require('@BigAssPracrticeProject/app/setup');
+    models = require('@BAPP/app/setup');
 
 /*Тут мы создаём экземпляр модели User и находим пользователя, 
 выполняя поиск по JWT-токену, полученному от клиента.*/
