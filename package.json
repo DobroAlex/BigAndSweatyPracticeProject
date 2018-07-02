@@ -6,9 +6,9 @@
   "homepage":"https://github.com/DobroAlex/BigAssPracrticeProject/blob/master/README.md", "_moduleAliases": 
   {
     "@root": ".",
-    "@BAPPManager": "./services/BAPPAPI",
-    "@BAPPManagerModels":"./services/BAPPAPI/app/models",
-    "@BAPPManagerAPI":"./services/BAPPAPI/config/app.js",
+    "@BAPP": "./services/BAPPAPI",
+    "@BAPPModels":"./services/BAPPAPI/app/models",
+    "@BAPPAPI":"./services/BAPPAPI/config/app.js",
     "@config":"./services/BAPPAPI/config/index.js"
 },
   "dependencies": {
