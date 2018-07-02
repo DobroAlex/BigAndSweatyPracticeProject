@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'),
-    UserModel = require('@BAPPManagerModels/user');;
+    UserModel = require('@BAPPModels/user');;
 const models = {
     User: mongoose.model('User')
 }
