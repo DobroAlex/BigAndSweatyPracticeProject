@@ -1,7 +1,7 @@
 const PassportJWT = require('passport-jwt'),
     ExtractJWT = PassportJWT.ExtractJwt,
     Strategy = PassportJWT.Strategy,
-    config = require('./index.JS'),
+    config = require('./index.js'),
     models = require('@BAPP/app/setup');
 
 /*Тут мы создаём экземпляр модели User и находим пользователя, 
