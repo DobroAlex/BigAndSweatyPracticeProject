@@ -24,7 +24,7 @@ app.set('BAPPsecret', config.secret);
 /*Тут мы проверяем, прежде чем выполнять другие действия, загружено ли содержимое папки setup, благодаря чему в первую очередь будет создан экземпляр модели. Затем загружаем методы API, и наконец — маршруты.*/
 
 consign({cwd:'services'})
-    .include ('BAPPManagerAPI/app/setup')
+    .include ('BAPPAPI/app/setup')
     .then('BAPPAPI/app/api')
     .then('BAPPAPI/app/routes')
     .into(app);

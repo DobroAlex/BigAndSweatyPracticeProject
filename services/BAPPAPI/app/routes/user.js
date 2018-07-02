@@ -4,7 +4,7 @@
 имеет ли пользователь право работать с конечными точками API.*/
 const passport = require('passport'),
     config = require('@config'),
-    models = require('@BAPPManager/app/setup');
+    models = require('@BAPP/app/setup');
 module.exports = (app) => {
     const api = app.BAPPAPI.api.api.user;
     app.route('/api/v1/setup')

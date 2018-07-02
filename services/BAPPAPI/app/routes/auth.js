@@ -11,7 +11,7 @@
    передавая модель User как аргумент.
    */
 
-const models = require('@BAPPManager/app/setup');
+const models = require('@BAPP/app/setup');
 module.exports = (app) => {
     const api = app.BAPPAPI.api.api.auth;
     app.route('/')
