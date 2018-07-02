@@ -6,7 +6,8 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 2018,
+        "sourceType": "module"
     },
     "rules": {
         "accessor-pairs": "error",
@@ -132,7 +133,7 @@
         "no-implicit-globals": "error",
         "no-implied-eval": "error",
         "no-inline-comments": "off",
-        "no-invalid-this": "error",
+        "no-invalid-this": "off",
         "no-iterator": "error",
         "no-label-var": "error",
         "no-labels": "error",
@@ -253,10 +254,7 @@
         "space-infix-ops": "error",
         "space-unary-ops": "error",
         "spaced-comment": "off",
-        "strict": [
-            "error",
-            "never"
-        ],
+        "strict": "error",
         "switch-colon-spacing": "error",
         "symbol-description": "error",
         "template-curly-spacing": [
