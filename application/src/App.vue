@@ -16,7 +16,7 @@ export default {
   @import "./assets/styles.scss";
   body
   {
-    background: url('./assets/images/background.jpg') no-repeat center center fixed;
+    background: url('./assets/images/background.png') no-repeat center center fixed;
     &:after  //В псевдоэлементе body :after мы задаём параметр background-color, записывая в него значение переменной $background-tint. Это позволит применить к фоновому изображению фуксивый цветной фильтр. 
     {
       content: '';
