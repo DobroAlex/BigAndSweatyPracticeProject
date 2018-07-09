@@ -131,14 +131,26 @@ message: используется для вывода сообщений в хо
     min-width: 272px;
     max-width: 320px;
     animation: bounceIn 1s forwards ease;
+    label, input, .icon {
+        color: #ff00dd!important;
+    }
+    .input-group__details {
+        &:before {
+             background-color: $border-color-input !important;
+        }
+    }
   }
-.l-signup {
+  .l-signup {
+      @extend .l-auth;
+      animation: slideInFromLeft 1s forwards ease;
+  }
+  /* .l-signup { 
     background-color: $background-color;
     padding: 15px;
     margin: 45px auto;
     min-width: 272px;
     max-width: 320px;
     animation: slideInFromLeft 1s forwards ease;
-  }
+  } */ 
 </style>
 <!-- код стилизации компонента -->
