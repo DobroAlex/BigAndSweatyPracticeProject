@@ -9,15 +9,16 @@
 export default {
   name: 'app'
 }
-</script> /*Newline required at end of file http://eslint.org/docs/rules/eol-last*/
+</script> <!--/*Newline required at end of file http://eslint.org/docs/rules/eol-last*/
 //импортируем ранее подготовленные стили scss и задаём использование фиксированного фонового изображения для приложения. Мы стремимся к тому, чтобы на любом устройстве экран приложения выглядел примерно одинаково.
-
+-->
+<!--//В псевдоэлементе body :after мы задаём параметр background-color, записывая в него значение переменной $background-tint. Это позволит применить к фоновому изображению фуксивый цветной фильтр. -->
 <style lang = "scss">
   @import "./assets/styles.scss";
   body
   {
     background: url('./assets/images/background.png') no-repeat center center fixed;
-    &:after  //В псевдоэлементе body :after мы задаём параметр background-color, записывая в него значение переменной $background-tint. Это позволит применить к фоновому изображению фуксивый цветной фильтр. 
+    &:after  
     {
       content: '';
       position: fixed;
