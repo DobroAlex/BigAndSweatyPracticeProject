@@ -80,7 +80,7 @@ export default {}
     export default {
         data () {
             return {
-                snackbar: false;
+                snackbar: false,
                 validLogin: false,
                 validSignUp: false,
                 signUpVisible: false,
