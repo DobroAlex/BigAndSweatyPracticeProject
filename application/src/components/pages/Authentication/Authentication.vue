@@ -25,9 +25,9 @@ export default {}
                                 :type="loginPasswordVisible ? 'text' : 'password'"
                                 color="deep-purple lighten-1">
                                  required>
-                </v-text-field>   
+                </v-text-field>
                 <v-btn flat color="deep-purple lighten-1" @click.native="signUpVisible = true">Push me to create account</v-btn>
-                 <v-btn color="deep-purple lighten-1" @click.native="submitAuthentication()">Push me to Log In</v-btn>              
+                 <v-btn color="deep-purple lighten-1" @click.native="submitAuthentication()">Push me to Log In</v-btn>
             </v-form>
         </div>
         <div class="1-signup" v-if="signUpVisible">
@@ -51,7 +51,7 @@ export default {}
                                 required>
                 </v-text-field>
 
-                 <v-btn block color="deep-purple lighten-1" @click.native="submitSignUp()">Push Me to Sign Up</v-btn>                
+                 <v-btn block color="deep-purple lighten-1" @click.native="submitSignUp()">Push Me to Sign Up</v-btn>
             </v-form>
         </div>
         <v-snackbar timeout="6000"
@@ -59,7 +59,7 @@ export default {}
                     color="red lighten-1"
                      v-model="snackbar">
             {{ message }}
-        </v-snackbar>    
+        </v-snackbar>
     </div>
 </template>
 
@@ -108,7 +108,6 @@ export default {}
             }
         }
     }
-    
 </script>
 <!-- snackbar: используется для панели сообщений.
 validLogin: используется для проверки формы входа в систему.
@@ -141,6 +140,5 @@ message: используется для вывода сообщений в хо
     max-width: 320px;
     animation: slideInFromLeft 1s forwards ease;
   }
-</style> 
-
+</style>
 <!-- код стилизации компонента -->
