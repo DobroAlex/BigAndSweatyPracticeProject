@@ -2,7 +2,7 @@
   <div>
     <h3>Hi! this is our App's Home</h3>
     <ul>
-      <li v-if="users != null" v-for="user in users">
+      <li v-if="users != null" v-for="user in users" :key="user.username">
         {{ user.username }}
       </li>
     </ul>
