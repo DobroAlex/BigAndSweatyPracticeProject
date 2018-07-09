@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'app'
-  }
-</script>
+export default {
+  name: 'app'
+}
+</script> /*Newline required at end of file http://eslint.org/docs/rules/eol-last*/
