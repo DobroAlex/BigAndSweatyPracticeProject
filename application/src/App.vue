@@ -5,20 +5,23 @@
     </v-container>
   </v-app>
 </template>
+
 <script>
-export default {
-  name: 'app'
-}
-</script> <!--/*Newline required at end of file http://eslint.org/docs/rules/eol-last*/
-//импортируем ранее подготовленные стили scss и задаём использование фиксированного фонового изображения для приложения. Мы стремимся к тому, чтобы на любом устройстве экран приложения выглядел примерно одинаково.
--->
-<!--//В псевдоэлементе body :after мы задаём параметр background-color, записывая в него значение переменной $background-tint. Это позволит применить к фоновому изображению фуксивый цветной фильтр. -->
-<style lang = "scss">
+  export default {
+    name: 'app',
+    data () {
+      return {}
+    }
+  }
+</script>
+
+<style lang="scss">
   @import "./assets/styles";
+
   body {
     background: url('./assets/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    &:after  {
+    &:after {
       content: '';
       position: fixed;
       width: 100%;
@@ -29,7 +32,8 @@ export default {
       opacity: .3;
       z-index: -1;
     }
-    .application  {
+
+    .application {
       background: none;
     }
   }

@@ -1,6 +1,6 @@
-# bapp
+# focus-budget-manager
 
-> A Vue.js project
+> A Budget Manager application
 
 ## Build Setup
 
