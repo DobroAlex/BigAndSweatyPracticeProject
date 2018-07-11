@@ -5,13 +5,13 @@
         <v-text-field v-model="searchValue"
                       label="Search"
                       append-icon="search"
-                      :color="budgetsVisible ? 'light-blue lighten-1' : 'green lighten-1'">
+                      :color="budgetsVisible ? 'light-blue accent-4' : 'green lighten-1'">
         </v-text-field>
       </v-flex>
 
       <v-flex xs12 offset-md1 md1>
         <v-btn block
-               :color="budgetsVisible ? 'light-blue lighten-1' : 'green lighten-1'"
+               :color="budgetsVisible ? 'light-blue accent-4' : 'green lighten-1'"
                @click.native="$emit('toggleVisibleData')">
                {{ budgetsVisible ? "Clients" : "Budgets" }}
         </v-btn>
@@ -19,7 +19,7 @@
 
       <v-flex xs12 offset-md1 md2>
         <v-select label="Status"
-                  :color="budgetsVisible ? 'light-blue lighten-1' : 'green lighten-1'"
+                  :color="budgetsVisible ? 'light-blue accent-4' : 'green lighten-1'"
                   v-model="status"
                   :items="statusItems"
                   single-line

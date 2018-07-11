@@ -54,7 +54,7 @@
                     direction="top"
                     transition="scale-transition">
           <v-btn slot="activator"
-                 color="red lighten-1"
+                 color="red accent-3"
                  dark
                  fab
                  v-model="fab">
@@ -63,7 +63,7 @@
           </v-btn>
 
           <v-tooltip left>
-            <v-btn color="light-blue lighten-1"
+            <v-btn color="light-blue accent-4"
                    dark
                    small
                    fab
@@ -148,7 +148,7 @@
         editPage: false,
         budgetCreation: true,
         budgetEdit: true,
-        snackColor: 'red lighten-1'
+        snackColor: 'red accent-3'
       }
     },
     mounted () {
@@ -341,7 +341,7 @@
       errorHandler (error) {
         const status = error.response.status
         this.snackbar = true
-        this.snackColor = 'red lighten-1'
+        this.snackColor = 'red accent-3'
         if (status === 404) {
           this.message = 'Invalid request'
         } else if (status === 401 || status === 403) {
