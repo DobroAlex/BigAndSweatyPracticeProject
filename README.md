@@ -16,7 +16,7 @@ npm i
 # Go to services/BudgetManagerAPI/config/
 # and setup a MongoDB with new terminal
 #First path is loaction of your mongod.exe and second path is location where data will be stored. We recommend to use  \services\BudgetManagerAPI\config
-"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="C:\Users\alexk\Desktop\BigAssPracrticeProject\services\BudgetManagerAPI\config"
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"   -dbpath="C:\Users\alexk\Desktop\BigAssPracrticeProject\database"
 
 #When launch Mongo in separate terminal 
 "C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
