@@ -1,6 +1,6 @@
-# Focus Budget Manager
+# Focus Budget Manager custom recriation 
 
-This application is being developed as part of a tutorial series.
+This application is being developed as part of a tutorial series by it's original after and was recreated and reworked as part of practice by me and my co-student 
 
 ##REQUIRMENTS:
 MongoDB
